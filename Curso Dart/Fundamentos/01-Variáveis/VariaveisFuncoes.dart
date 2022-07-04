@@ -1,6 +1,7 @@
 /* Principais funções para cada tipo de variável */
 
 void main() {
+  print("01.1) Fuinções de variáveis");
   /* Para variáveis de tipo num (int e double) temos as seguintes mais importantes: */
   num pi = 3.14;
 
