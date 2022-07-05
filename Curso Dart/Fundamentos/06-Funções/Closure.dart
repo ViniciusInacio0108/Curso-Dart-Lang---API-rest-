@@ -4,13 +4,13 @@ void main() {
 
   /* Closures nada mais é do que uma função dentro do corpo de outra função. */
 
-  PorcentagemDeDesconto(porcentagemASerDescontada) {
+  porcentagemComDesconto(porcentagemASerDescontada) {
     return (valorASerDescontado) =>
         valorASerDescontado * porcentagemASerDescontada;
   }
 
-  // descontarDez vai receber o retorno de PorcentagemDeDesconto que é a função closure. Logo ela vai ser a função closure só que com o parâmetro de porcentagemASerDescontada já aplicado.
-  var descontarDez = PorcentagemDeDesconto(0.9);
+  // descontarDez vai receber o retorno de porcentagemComDesconto que é a função closure. Logo ela vai ser a função closure só que com o parâmetro de porcentagemASerDescontada já aplicado.
+  var descontarDez = porcentagemComDesconto(0.9);
 
   print(descontarDez(100));
 }

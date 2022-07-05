@@ -6,11 +6,11 @@ void main() {
 
   int idade = 20;
 
-  ExecutarFunctionAnonima(Function funcao) {
+  executarFunctionAnonima(Function funcao) {
     // basicamente um funcao que recebe um parâmetro function e que vai executar ele dentro dela
     funcao();
   }
 
-  ExecutarFunctionAnonima(() => print(
+  executarFunctionAnonima(() => print(
       "Idade: $idade")); // função anonima sendo passada como parâmetro para outra.
 }
